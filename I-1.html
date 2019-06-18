@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>滞在検索</title>
+	<link rel="stylesheet"  href="assets/css/common.css" />
+	<link rel="stylesheet"  href="assets/css/ID-G.css" />
+	<link rel="stylesheet"  href="assets/css/custom.css" />
+	<link rel="stylesheet"  href="assets/js/colorbox-master/example3/colorbox.css" />
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/colorbox-master/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="assets/js/class.js"></script>
+</head>
+
+<body class="stay_search">
+	<div class="wrapper">
+		<div id="header">
+			<div id="title_area">
+				<img src="assets/images/header/title_logo.png" height="55" width="424">
+				<div id="login_info">
+					<p>管理者 株式会社ジークス smartdev@zyyx.jp<span id="logout_box"><a href="A-1.html">ログアウト</a></span></p>
+				</div>
+			</div>
+			<div id="g_navi">
+				<ul>
+					<li id="home"><a href="G-1.html">HOME</a></li>
+					<li id="mr_search"><a href="H-1.html">MR検索</a></li>
+					<li id="stay_search"><a href="I-1.html">滞在検索</a></li>
+					<li id="stay_time"><a href="J-1.html">滞在時間</a></li>
+					<li id="checkin_count"><a href="K-1.html">チェックイン回数</a></li>
+					<li id="setting_navi"><a href="L-1.html">設定</a></li>
+					<div style="clear:both;"></div>
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+		<div class="article">
+			<div class="section_navi bottom15">
+				<div id="page_title">
+					<p>滞在検索</p>
+				</div>
+
+				<div class="proce_area">
+					<table>
+						<tbody>
+							<tr>
+								<th width="15%">エリア</th>
+								<td width="35%">
+									<select name="group">
+										<option value="">--選択してください--</option>
+									</select>
+								</td>
+								<td width="20%">&nbsp;</td>
+								<td width="30%">&nbsp;</td>
+							</tr>
+							<tr>
+								<th width="15%" rowspan="2">期間</th>
+								<td colspan="3">
+									<input type="text" name="" id="" class="w_auto">
+									<select name="work_time_hour_f" id="work_time_hour_f" class="w_auto">
+										<option value="">00時</option>
+										<option value="">01時</option>
+										<option value="">02時</option>
+										<option value="">03時</option>
+										<option value="">04時</option>
+										<option value="">05時</option>
+										<option value="">06時</option>
+										<option value="">07時</option>
+										<option value="">08時</option>
+										<option value="">09時</option>
+										<option value="">10時</option>
+										<option value="">11時</option>
+										<option value="">12時</option>
+										<option value="">13時</option>
+										<option value="">14時</option>
+										<option value="">15時</option>
+										<option value="">16時</option>
+										<option value="">17時</option>
+										<option value="">18時</option>
+										<option value="">19時</option>
+										<option value="">20時</option>
+										<option value="">21時</option>
+										<option value="">22時</option>
+										<option value="">23時</option>
+									</select>
+									<select name="work_time_minute_f" id="work_time_minute_f" class="w_auto">
+										<option value="">00分</option>
+										<option value="">01分</option>
+										<option value="">02分</option>
+										<option value="">03分</option>
+										<option value="">04分</option>
+										<option value="">05分</option>
+										<option value="">06分</option>
+										<option value="">07分</option>
+										<option value="">08分</option>
+										<option value="">09分</option>
+										<option value="">10分</option>
+										<option value="">11分</option>
+										<option value="">12分</option>
+										<option value="">13分</option>
+										<option value="">14分</option>
+										<option value="">15分</option>
+										<option value="">16分</option>
+										<option value="">17分</option>
+										<option value="">18分</option>
+										<option value="">19分</option>
+										<option value="">20分</option>
+										<option value="">21分</option>
+										<option value="">22分</option>
+										<option value="">23分</option>
+										<option value="">24分</option>
+										<option value="">25分</option>
+										<option value="">26分</option>
+										<option value="">27分</option>
+										<option value="">28分</option>
+										<option value="">29分</option>
+										<option value="">30分</option>
+										<option value="">31分</option>
+										<option value="">32分</option>
+										<option value="">33分</option>
+										<option value="">34分</option>
+										<option value="">35分</option>
+										<option value="">36分</option>
+										<option value="">37分</option>
+										<option value="">38分</option>
+										<option value="">39分</option>
+										<option value="">40分</option>
+										<option value="">41分</option>
+										<option value="">42分</option>
+										<option value="">43分</option>
+										<option value="">44分</option>
+										<option value="">45分</option>
+										<option value="">46分</option>
+										<option value="">47分</option>
+										<option value="">48分</option>
+										<option value="">49分</option>
+										<option value="">50分</option>
+										<option value="">51分</option>
+										<option value="">52分</option>
+										<option value="">53分</option>
+										<option value="">54分</option>
+										<option value="">55分</option>
+										<option value="">56分</option>
+										<option value="">57分</option>
+										<option value="">58分</option>
+										<option value="">59分</option>
+									</select>
+									〜　
+									<input type="text" name="" id="" class="w_auto">
+									<select name="work_time_hour_f" id="work_time_hour_f" class="w_auto">
+										<option value="">00時</option>
+										<option value="">01時</option>
+										<option value="">02時</option>
+										<option value="">03時</option>
+										<option value="">04時</option>
+										<option value="">05時</option>
+										<option value="">06時</option>
+										<option value="">07時</option>
+										<option value="">08時</option>
+										<option value="">09時</option>
+										<option value="">10時</option>
+										<option value="">11時</option>
+										<option value="">12時</option>
+										<option value="">13時</option>
+										<option value="">14時</option>
+										<option value="">15時</option>
+										<option value="">16時</option>
+										<option value="">17時</option>
+										<option value="">18時</option>
+										<option value="">19時</option>
+										<option value="">20時</option>
+										<option value="">21時</option>
+										<option value="">22時</option>
+										<option value="">23時</option>
+									</select>
+									<select name="work_time_minute_f" id="work_time_minute_f" class="w_auto">
+										<option value="">00分</option>
+										<option value="">01分</option>
+										<option value="">02分</option>
+										<option value="">03分</option>
+										<option value="">04分</option>
+										<option value="">05分</option>
+										<option value="">06分</option>
+										<option value="">07分</option>
+										<option value="">08分</option>
+										<option value="">09分</option>
+										<option value="">10分</option>
+										<option value="">11分</option>
+										<option value="">12分</option>
+										<option value="">13分</option>
+										<option value="">14分</option>
+										<option value="">15分</option>
+										<option value="">16分</option>
+										<option value="">17分</option>
+										<option value="">18分</option>
+										<option value="">19分</option>
+										<option value="">20分</option>
+										<option value="">21分</option>
+										<option value="">22分</option>
+										<option value="">23分</option>
+										<option value="">24分</option>
+										<option value="">25分</option>
+										<option value="">26分</option>
+										<option value="">27分</option>
+										<option value="">28分</option>
+										<option value="">29分</option>
+										<option value="">30分</option>
+										<option value="">31分</option>
+										<option value="">32分</option>
+										<option value="">33分</option>
+										<option value="">34分</option>
+										<option value="">35分</option>
+										<option value="">36分</option>
+										<option value="">37分</option>
+										<option value="">38分</option>
+										<option value="">39分</option>
+										<option value="">40分</option>
+										<option value="">41分</option>
+										<option value="">42分</option>
+										<option value="">43分</option>
+										<option value="">44分</option>
+										<option value="">45分</option>
+										<option value="">46分</option>
+										<option value="">47分</option>
+										<option value="">48分</option>
+										<option value="">49分</option>
+										<option value="">50分</option>
+										<option value="">51分</option>
+										<option value="">52分</option>
+										<option value="">53分</option>
+										<option value="">54分</option>
+										<option value="">55分</option>
+										<option value="">56分</option>
+										<option value="">57分</option>
+										<option value="">58分</option>
+										<option value="">59分</option>
+									</select>
+									<input class="w_auto" type="checkbox" name="status" value="" checked>時間外活動で絞り込み
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<ul>
+						<li class="char_button_search"><a href="javascript:void(0)">検索</a></li>
+					</ul>
+				</div>
+
+				<div id="count_of_pageing">
+					<p>1024　件中　1-10 件目</p>
+					<ul>
+						<li class="pageingL"><a href="javascript:void(0)" class="char_button">最初</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">&#139;</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">1</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">2</a></li>
+						<li class="pageingS active"><a href="javascript:void(0)" class="char_button">3</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">4</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">&#155;</a></li>
+						<li class="pageingL"><a href="javascript:void(0)" class="char_button">最後</a></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div><!--count_of_pageing-->
+			</div><!--section_navi-->
+
+			<div>
+				<table class="pub_tset">
+					<tbody>
+						<tr>
+							<th width="10%">日付<span class="sort"><a href="javascript:void(0)" class="ascending"><img src="assets/images/public/ascending.png" height="22" width="22"></a><a href="javascript:void(0)" class="descending"><img src="assets/images/public/descending.png"></a></span></th>
+							<th width="20%">MR<span class="sort"><a href="javascript:void(0)" class="ascending"><img src="assets/images/public/ascending.png" height="22" width="22"></a><a href="javascript:void(0)" class="descending"><img src="assets/images/public/descending.png"></a></span></th>
+							<th width="20%">製薬会社名<span class="sort"><a href="javascript:void(0)" class="ascending"><img src="assets/images/public/ascending.png" height="22" width="22"></a><a href="javascript:void(0)" class="descending"><img src="assets/images/public/descending.png"></a></span></th>
+							<th width="20%">滞在場所<span class="sort"><a href="javascript:void(0)" class="ascending"><img src="assets/images/public/ascending.png" height="22" width="22"></a><a href="javascript:void(0)" class="descending"><img src="assets/images/public/descending.png"></a></span></th>
+							<th width="10%">IN時間</th>
+							<th width="10%">OUT時間</th>
+							<th width="10%">滞在時間<span class="sort"><a href="javascript:void(0)" class="ascending"><img src="assets/images/public/ascending.png" height="22" width="22"></a><a href="javascript:void(0)" class="descending"><img src="assets/images/public/descending.png"></a></span></th>
+						</tr>
+						<tr>
+							<td>2018/11/1</td>
+							<td class="photo_name"><span class="img-wrapper"><img src="https://placehold.jp/100x150.png"></span>test1234</td>
+							<td>BBB製薬工場</td>
+							<td>診療科A</td>
+							<td>18:00</td>
+							<td>20:00</td>
+							<td>02:00</td>
+						</tr>
+						<tr class="even">
+							<td>2018/11/1</td>
+							<td class="photo_name"><span class="img-wrapper"><img src="https://placehold.jp/100x150.png"></span>test1234</td>
+							<td>BBB製薬工場</td>
+							<td>診療科A</td>
+							<td>18:00</td>
+							<td>20:00</td>
+							<td>02:00</td>
+						</tr>
+						<tr>
+							<td>2018/11/1</td>
+							<td class="photo_name"><span class="img-wrapper"><img src="https://placehold.jp/100x150.png"></span>test1234</td>
+							<td>BBB製薬工場</td>
+							<td>診療科A</td>
+							<td>18:00</td>
+							<td>20:00</td>
+							<td>02:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="section_navi top15">
+				<div id="count_of_pageing">
+					<p>1024　件中　1-10 件目</p>
+					<ul>
+						<li class="pageingL"><a href="javascript:void(0)" class="char_button">最初</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">&#139;</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">1</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">2</a></li>
+						<li class="pageingS active"><a href="javascript:void(0)" class="char_button">3</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">4</a></li>
+						<li class="pageingS"><a href="javascript:void(0)" class="char_button">&#155;</a></li>
+						<li class="pageingL"><a href="javascript:void(0)" class="char_button">最後</a></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div><!--count_of_pageing-->
+				<p class="setting_back"><a href="E-1.html">戻る</a></p>
+				<div style="clear:both;"></div>
+			</div><!--section_navi-->
+		</div>
+
+
+		<div class="footer">
+			<div id="all_right">
+				<p>&copy; ZYYX Inc. All Rights Reserved</p>
+			</div>
+		</div>
+		<div id="page_top_link">
+			<a href="javascript:void(0)"><img src="assets/images/footer/page_top_link.png" height="60" width="60" alt="ページトップへ"></a>
+			<div style=""clear:both;></div>
+		</div>
+	</div>
+</body>
+</html>

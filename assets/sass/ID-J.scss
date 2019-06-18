@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/********************************************
+/	J-1
+*********************************************/
+
+.proce_area{
+	table{
+		tr{
+			td{
+				input{
+					width: auto!important;
+				}
+				select{
+					width: auto!important;
+				}
+			}
+		}
+	}
+}

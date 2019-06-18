@@ -1,0 +1,47 @@
+/********************************************
+/	E-1
+*********************************************/
+/* line 7, ../sass/ID-E.scss */
+.setting_menu {
+  width: 710px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 13, ../sass/ID-E.scss */
+.setting_menu ul {
+  display: inline-block;
+  width: 750px;
+  padding: 0;
+  margin: 0;
+}
+/* line 18, ../sass/ID-E.scss */
+.setting_menu ul li {
+  width: 338px;
+  float: left;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  background: url("../images/public/bottom_shadow.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+  display: inline-block;
+}
+/* line 31, ../sass/ID-E.scss */
+.setting_menu ul li a {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 11.5px 0;
+}
+/* line 41, ../sass/ID-E.scss */
+.setting_menu ul .even {
+  margin-left: 30px;
+}

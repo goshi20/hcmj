@@ -1,0 +1,12 @@
+[
+  { "company":"武田製薬", "name": "山下", "value": 78 },
+  { "company":"ノバルティス", "name": "石田", "value": 69 },
+  { "company":"ステラス製薬", "name": "河野", "value": 65 },
+  { "company":"ファイザー", "name": "佐藤", "value": 60 },
+  { "company":"大鴨製薬", "name": "今井", "value": 58 },
+  { "company":"大正製薬", "name": "山田", "value": 53 },
+  { "company":"オリンパス", "name": "下井", "value": 47 },
+  { "company":"第一三共", "name": "田代", "value": 47 },
+  { "company":"イーラーリリー", "name": "井川", "value": 45 },
+  { "company":"グラクソスミス", "name": "小山", "value": 32 }
+]

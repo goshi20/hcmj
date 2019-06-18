@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/********************************************
+/	D-1
+*********************************************/
+
+.proce_area{
+	table{
+		tr{
+			td{
+				input{
+					border: 1px solid #a9a9a9;
+				}
+				input[type="text"]{
+					width: 55%;
+				}
+				input[type="checkbox"]{
+					width: auto;
+					display: inline-block;
+					margin-left: 20px;
+					margin-bottom: 0;
+				}
+				.first_C{
+					margin-left: 0!important;
+				}
+			}
+		}
+	}
+}
+#here_table{
+	width:100%;
+	display: block;
+}
+
+/********************************************
+/	D-2
+*********************************************/
+
+.pub_table_ov{
+	tr{
+		td{
+			input[type="date"]{
+				width: 40%!important;
+				margin-top: 0px;
+			}
+			input[type="time"]{
+				width: 20%!important;
+				margin-top: 0;
+				margin-top: 10px;
+			}
+			textarea{
+				height: 300px;
+			}
+			select{
+				float: right;
+				width: 60px!important;
+			}
+			input[type="radio"]{
+				margin-top: 9px!important;
+				display: inline-block;
+			}
+			.select_day{
+				display: block;
+				margin-bottom: 5px;
+				select{
+					float: left;
+					margin-left: 5px;
+					&:first-child{
+						margin-left: 0;
+						width: 80px!important;
+					}
+				}
+			}
+			.select_time{
+				select{
+					float: left;
+					margin-left: 5px;
+					&:first-child{
+						margin-left: 0;
+					}
+				}
+			}
+			//配信先設定
+			.group_position{
+				float: left;
+				width: 20%;
+				li{
+					list-style-type: none;
+					margin-top: 10px;
+					&:first-child{
+						margin-top: 0;
+					}
+					input[type="radio"]{
+						margin: 0!important;
+						display: inline-block;
+					}
+				}
+			}
+			.group_select{
+				float: left;
+				width: 80%;
+				table{
+					margin-top: 25px;
+					tr{
+						border:none!important;
+						td{
+							padding:4.5px 12px 4.5px 1.5em!important;
+							text-indent: -1.5em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/********************************************
+/	D-3
+/	※D-2と同じです
+*********************************************/
+
+/********************************************
+/	D-4
+/	※D-2と同じです
+*********************************************/
+
+.pub_table_ov{
+	tr{
+		td{
+			p{
+				margin: 0;
+			}
+			#textarea{
+				height: 300px;
+			}
+		}
+	}
+}

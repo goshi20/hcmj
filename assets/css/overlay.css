@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+/*
+*	Title: Smooth Class案件用 - オーバーレイ用CSS
+*	URI:
+*	Last Modified: 2009-04-03
+*	Description: オーバーレイ表示用のスタイルを定義する
+*/
+
+
+/*========================================
+
+========================================*/
+body {
+	position: relative;
+}
+
+/* ----- オーバーレイ背景 ----- */
+#overlayScreen {
+	display: none;
+	position: fixed;
+	z-index: 100100;
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	filter: alpha(opacity=0);
+	opacity: 0.0;
+	z-index: 100100;
+}
+* html #overlayScreen {	/* IE6用 */
+	position: absolute;
+	width: expression(document.body.scrollWidth > document.body.offsetWidth ? document.body.scrollWidth : document.body.offsetWidth + 'px');
+	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+/* ----- 表示要素の大枠 ----- */
+#overlayContent {
+	visibility: hidden;
+	position: fixed;
+	z-index: 100110;
+	left: 0;
+	top: 0;
+	Xwidth: 42px;
+	Xheight: 42px;
+	background: #ffffff;
+	z-index: 100101;
+}
+* html #overlayContent {	/* IE6用 */
+	top: 0;
+	position: absolute;
+}
+
+/* ----- ローディングイメージ ----- */
+#overlayContent #overlayLoading {
+	display: block;
+	position: absolute;
+	z-index: 100111;
+	left: 5px;
+	top: 5px;
+	width: 32px;
+	height: 32px;
+	background: url(../images/public/img_loading.gif) no-repeat 50% 50%;
+	Xoverflow: hidden;
+}
+
+/* ----- 表示要素の内枠（背景） ----- */
+#overlayContent #overlayContentFrameBack {
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	z-index: 100120;
+	left: 0;
+	top: 0;
+	background: #ffffff;
+	filter: alpha(opacity=100);
+	opacity: 1.0;
+}
+
+/* ----- 表示要素の内枠 ----- */
+#overlayContent #overlayContentFrame {
+	visibility: hidden;
+	position: absolute;
+	z-index: 100121;
+	left: 0;
+	top: 0;
+	background: #ffffff;
+}
+
+#overlayContent #overlayContentFrame #overlayContentBody {
+	padding: 0;
+}
+
+/* ----- オーバーレイのタイトル ----- */
+#overlayContent #overlayContentFrame #overlayContentTitle {
+	/*border-bottom: 5px solid #000000;
+	min-height: 14px;
+	max-height: 14px;
+	padding: 11px 37px 10px 15px;
+	background: #000000;*/
+	line-height: 1;
+	font-weight: bold;
+	font-size: 14px;
+	color: #ffffff;
+}
+*html #overlayContent #overlayContentFrame #overlayContentTitle {
+	height: 14px;
+}
+
+#overlayCloseIcon {
+	display: block;
+	z-index: 100122;
+	width: 37px;
+	height: 37px;
+	background: url(../images/public/controls_close.png) no-repeat;
+}
+
+/* ----- 表示要素の定義 ----- */
+#overlayContent #overlayContentFrame #overlayArea {
+	margin: 0 auto;
+	padding: 30px 0;
+	width: 550px;
+}
+
+#overlayContent #overlayContentFrame #overlayAreaSmall {
+	margin: 0 auto;
+	padding: 30px 0;
+	width: 330px;
+}
+
+#overlayArea .overlayDetail,
+#overlayAreaSmall .overlayDetail {
+	margin: 0;
+	padding: 0 0 15px;
+}
+
+#overlayArea .overlayInput,
+#overlayAreaSmall .overlayInput {
+	margin:0 auto;
+	padding: 15px;
+	background: #efefd5;
+}
+
+#overlayArea .overlayInput table,
+#overlayAreaSmall .overlayInput table {
+	margin:0 auto;
+	width: 520px;
+}
+
+#overlayArea .overlayInput table th,
+#overlayAreaSmall .overlayInput table th {
+	padding: 0 0 10px 20px;
+	text-align: left;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+#overlayArea .overlayInput table td,
+#overlayAreaSmall .overlayInput table td {
+	padding: 0 0 10px 20px;
+	vertical-align: middle;
+}
+
+/* ★追加 */
+#overlayArea .overlayInput table td.stateNormal {
+	padding: 0 0 0 40px;
+}
+#overlayArea .overlayInput table td.stateProc {
+	padding: 0 0 0 40px;
+	background: url(../images/overlay/img_loading_small.gif) no-repeat center left;
+}
+
+#overlayArea .overlayInput td input,
+#overlayAreaSmall .overlayInput td input {
+	padding:3px;
+}
+
+#overlayArea .overlayInput td input,
+#overlayAreaSmall .overlayInput td input {
+ vertical-align: middle;
+}
+
+#overlayArea .overlayInput .iconCal,
+#overlayAreaSmall .overlayInput .iconCal {
+	margin: 0 5px 0;
+}
+
+#overlayArea .overlayInput .iconCal img,
+#overlayAreaSmall .overlayInput .iconCal img {
+	vertical-align: top;
+}
+
+#overlayArea .attention,
+#overlayAreaSmall .attention {
+	color: #669900;
+	font-weight: bold;
+}
+
+#overlayArea .inputAttention {
+	color: red;
+	font-weight: bold;
+}
+
+#overlayAreaSmall .overlayDetail .confirm {
+	margin: 0 0 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* エラー部分表示 */
+#overlayArea .errorArea {
+	display: none;
+	margin: 0 auto 1px;
+	padding: 10px 20px;
+	background: #eeeeee;
+}
+
+#overlayArea .errorArea li {
+	color: #cc0000;
+}
+
+#overlayArea .errorArea li span {
+	margin: 0 0 0 -5px;
+}
+
+#overlayArea .overlayInput table .error {
+	background: #ffcccc;
+}
+
+/* 入力部分の補足文字 */
+#overlayArea .overlayInput table td .unitMiddle {
+	margin: 0 5px;
+	vertical-align: middle;
+}
+
+/* ボタン定義 */
+#overlayAreaSmall .overlayBtn ,
+#overlayArea .overlayBtn {
+	position:relative;
+	margin:0;
+}
+
+#overlayAreaSmall .overlayBtn #overlayActBtn ,
+#overlayArea .overlayBtn #overlayActBtn {
+	position:absolute;
+	right: 0px;
+	top: 20px;
+}
+
+#overlayArea .overlayBtn #overlayCloseBtn {
+	margin: 20px 0 0;
+}
+
+#overlayArea .overlaysearchBtn p {
+	padding: 0 0 20px 0;
+}
+
+#overlayArea p.olbtnposi {
+	text-align: center;
+}
+
+ /* オーバーレイの表	*/
+#overlayArea .infoList {
+	margin: 10px auto !important;
+}
+
+#overlayArea .infoList td {
+	padding: 7px 10px !important;
+	border: #b3b3b3 1px solid;
+	vertical-align: middle !important;
+}
+
+#overlayArea .infoList th {
+	padding: 5px 10px !important;
+	border: #b3b3b3 1px solid;
+	background: #e3f0d7;
+	text-align: left !important;
+	vertical-align: middle !important;
+}
+
+/* ソートエリア */
+#overlayArea .infoList th div {
+	position: relative;
+}
+#overlayArea .infoList th a.sortup {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	width: 11px;
+	height: 11px;
+	background: url(../images/icon_up_default.gif) no-repeat;
+	z-index: 1001;
+}
+
+#overlayArea .infoList th a.sortdown {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 11px;
+	height: 11px;
+	background: url(../images/icon_down_default.gif) no-repeat;
+	z-index: 1001;
+}
+
+#overlayArea .infoList th a.sortup_active {
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	width: 11px;
+	height: 11px;
+	background: url(../images/icon_up_highlight.gif) no-repeat;
+	z-index: 1001;
+}
+
+#overlayArea .infoList th a.sortdown_active {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 11px;
+	height: 11px;
+	background: url(../images/icon_down_highlight.gif) no-repeat;
+	z-index: 1001;
+}
+
+#overlayArea .infoList th a.sortup:hover {
+	background: url(../images/icon_up_highlight.gif) no-repeat;
+	z-index: 1003;
+}
+
+#overlayArea .infoList th a.sortdown:hover {
+	background: url(../images/icon_down_highlight.gif) no-repeat;
+	z-index: 1003;
+}
+
+#overlayArea .infoList .even td {
+	background: #f6f6f6;
+}
+
+#overlayArea .infoList .uneven td {
+	background: #ffffff;
+}
+
+/* 参加状況 */
+#overlayArea div.olmeetjoin {
+	margin: 0 0 10px;
+}
+
+#overlayArea div.olmeetjoin select {
+	width: 150px;
+}
+
+#overlayArea .olmeetjoin p {
+	padding: 5px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#overlayArea p.joinnumber {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/* ★追加 input file の見た目の対応用*/
+.fileToImage{
+	position: relative;
+	z-index: 1000;
+	width: 310px;
+	height: 24px;
+	margin-bottom: 20px;
+}
+/* input file */
+input#documentsData.changeImage {
+	opacity: 0;
+	position: relative;
+	z-index: 10050;
+	height: 27px;
+	width: 130px;
+	cursor:default;
+}
+/* ダミーボタン */
+#selectFilesBtn{
+	position: absolute;
+	left: 0px;
+	top: 0;
+	z-index: 1000;
+}
+
+/* グループ関連 */
+#overlayArea .groupInputArea td {
+	padding: 0px 7px 2px !important;
+	vertical-align: middle !important;
+}
+#overlayArea .groupInputArea td.title {
+	padding: 10px 7px 10px !important;
+}
+#overlayArea .groupInputArea table th {
+	padding:7px 0 10px 10px;
+	text-align:right;
+	font-weight:bold;
+	vertical-align:top;
+}
+#overlayArea .groupInputArea h4 {
+	border-bottom: 2px solid #666;
+	font-weight: bold;
+	font-size: 14px;
+}
+#overlayArea .table-member td {
+	padding:7px 0 10px 10px;
+}
+#overlayArea .table-member td select {
+	width: 100%;
+}
+#overlayArea .table-member td select .added {
+	color: #cccccc;
+}
+#overlayArea tr td.half {
+	width: 50%;
+}
+#overlayArea select.select-group {
+	width: 100%;
+	height:174px;
+	overflow: visible;
+	overflow-x: auto;
+	background: #ffffff;
+}

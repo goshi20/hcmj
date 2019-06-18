@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/********************************************
+/	C-1
+*********************************************/
+
+.section_navi{
+	.proce_area{
+		table{
+			margin-bottom: 0!important;
+		}
+		ul{
+			li{
+				margin-bottom: 40px!important;
+			}
+		}
+	}
+}
+
+.data_dl_info{
+	width:795px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	#dl_dropdown_button{
+		display: block;
+		margin:0;
+		a{
+			background:url("../images/public/bottom_shadow_download.png");
+			background-position: left bottom;
+			background-repeat: repeat-x;
+			background-color: #ffffe3;
+			display: block;
+			padding-top:3px;
+			height: 27px;
+			border:#cccccc 1px solid;
+			color: #333333;
+			font-weight: bold;
+			font-size: 16px;
+			cursor: pointer;
+			padding-left: 15px;
+			text-decoration: none;
+			.down{
+				float: right;
+				margin-right: 10px;
+				&:before{
+					content: "\e609";
+					font-family: 'icomoon';
+					font-size: 16px;
+					font-weight: normal;
+					color: #333333;
+					font-size: 18px;
+					margin-right: 3px;
+					position: relative;
+					top: 2px;
+				}
+			}
+			.up{
+				float: right;
+				margin-right: 10px;
+				&:before{
+					content: "\e60a";
+					font-family: 'icomoon';
+					font-size: 16px;
+					font-weight: normal;
+					color: #333333;
+					font-size: 18px;
+					margin-right: 3px;
+					position: relative;
+					top: 2px;
+				}
+			}
+		}
+	}
+	#dl_dropdown_info{
+		background:url("../images/public/drop_down_menu.png");
+		background-repeat: no-repeat;
+		display: none;
+		width: 755px;
+		height: 112px;
+		padding: 20px;
+		p{
+			margin:0;
+			margin-bottom: 20px;
+		}
+		select{
+			width: auto;
+		}
+		#csv_download_button{
+			display: block;
+			margin:0;
+			width: 238px;
+			text-align: center;
+			float: right;
+			a{
+				background:url("../images/public/bottom_shadow_search.png");
+				background-position: left bottom;
+				background-repeat: repeat-x;
+				background-color:#fddea5;
+				display: inline-block;
+				width: 100%;
+				padding-top: 10px;
+				height: 30px;
+				border:#cccccc 1px solid;
+				font-weight: bold;
+				text-decoration: none;
+				color: #333333;
+			}
+		}
+	}
+}
+
+#here_table{
+	width:100%;
+	display: block;
+	table{
+		tr{
+			th{
+				input[type="checkbox"]{
+					width: 13px!important;
+					border:none;
+					margin:0;
+				}
+			}
+			td{
+				text-align: left;
+				.alignC{
+					display: block;
+					text-align: center;
+					input[type="checkbox"]{
+						width: 13px!important;
+						border:none;
+						margin:0;
+					}
+				}
+			}
+		}
+	}
+	.disabled_check{
+		th{
+			&:first-child{
+				background-color: #afafaf;
+			}
+		}
+		td{
+			&:first-child{
+				background-color: #afafaf;
+			}
+		}
+	}
+}
+
+
+/********************************************
+/	C-2
+*********************************************/
+#result_table{
+	width:100%;
+	display: block;
+	table{
+		tr{
+			td.cor{
+				span{
+					display: inline-block;
+				}
+				a{
+					text-decoration: none;
+					color: #333333;
+					display: inline-block;
+					padding: 3px 10px 0px 10px;
+					font-weight: bold;
+					height: 25px;
+					margin-left: 10px;
+					span{
+						display: block;
+						text-align: center;
+					}
+				}
+			}
+			td.alignC{
+				text-align: center;
+			}
+		}
+		.saturday{
+			td{
+				background-color: #eff7fb;
+			}
+		}
+		.sunday{
+			td{
+				background-color: #fdefef;
+			}
+		}
+	}
+}
+
+
+/********************************************
+/	C-3
+*********************************************/
+
+.pub_table_ov{
+	tr{
+		td{
+			select{
+				width: auto!important;
+			}
+			.outing_time_group{
+				display: block;
+			}
+			.item_edit_button{
+				display: inline-block;
+				margin: 0;
+				margin-bottom: 5px;
+				a{
+					background: url("../images/public/bottom_shadow.png");
+					background-position:left bottom;
+					background-repeat: repeat-x;
+					width: 23px;
+					height: 29px;
+					padding-top: 1px;
+					padding-left:7px;
+					border:#cccccc 1px solid;
+					display: inline-block;
+					color: #333333;
+					text-decoration: none;
+					font-weight: bold;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

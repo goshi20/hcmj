@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/********************************************
+/	I-1
+*********************************************/
+/* line 7, ../sass/ID-I.scss */
+#floor_table {
+  width: 100%;
+  display: block;
+}
+/* line 12, ../sass/ID-I.scss */
+#floor_table table tr td {
+  text-align: left;
+}
+/* line 16, ../sass/ID-I.scss */
+#floor_table table .over_area {
+  background-color: #ececec;
+}
+/* line 18, ../sass/ID-I.scss */
+#floor_table table .over_area td {
+  color: #999999;
+}
+
+/********************************************
+/	I-2
+*********************************************/
+/* line 30, ../sass/ID-I.scss */
+.floor_regist input {
+  border: 1px solid darkgray;
+}
+/* line 34, ../sass/ID-I.scss */
+.floor_regist .floor_header1 td {
+  padding-right: 10px;
+}
+/* line 36, ../sass/ID-I.scss */
+.floor_regist .floor_header1 td input {
+  width: 100%;
+}
+/* line 43, ../sass/ID-I.scss */
+.floor_regist .floor_header2 td input {
+  width: 55%;
+  margin-right: 10px;
+}
+/* line 51, ../sass/ID-I.scss */
+.floor_regist .floor_header3 td input {
+  width: 30%;
+  margin-right: 10px;
+}
+/* line 59, ../sass/ID-I.scss */
+.floor_regist .floor_header4 td input {
+  width: 30%;
+  margin-right: 10px;
+}
+
+/********************************************
+/	I-3
+*********************************************/
+/* line 73, ../sass/ID-I.scss */
+.new_regist table caption {
+  text-align: left;
+  font-weight: bold;
+  color: #00a3af;
+  font-size: 16px;
+}
+/* line 81, ../sass/ID-I.scss */
+.new_regist ul li {
+  margin-left: 40px;
+}
+/* line 83, ../sass/ID-I.scss */
+.new_regist ul li:first-child {
+  margin-left: 0;
+}
+
+/********************************************
+/	I-4
+/	※I-2と同じです
+*********************************************/
+/********************************************
+/	I-5
+/	※I-3と同じです
+*********************************************/
+/********************************************
+/	I-6
+*********************************************/
+/* line 103, ../sass/ID-I.scss */
+.management_img {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+/* line 108, ../sass/ID-I.scss */
+.management_img .map {
+  border: 1px solid #cccccc;
+}
+/* line 111, ../sass/ID-I.scss */
+.management_img .marker {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  z-index: 1;
+  border: 1px solid #000;
+  border: none;
+}
+
+/********************************************
+/	I-8
+*********************************************/
+/* line 124, ../sass/ID-I.scss */
+#tabs {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+/* line 131, ../sass/ID-I.scss */
+.ui-tabs-nav {
+  padding: 0 !important;
+}
+
+/* line 135, ../sass/ID-I.scss */
+.edit_iBeacon_position {
+  text-align: left !important;
+}
+/* line 138, ../sass/ID-I.scss */
+.edit_iBeacon_position #tabs #install {
+  display: block;
+  padding: 10px 0 0 0;
+  border: solid 1px #cccccc !important;
+  border-width: 1px !important;
+  padding: 20px;
+  position: relative;
+  z-index: 1250;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+/* line 148, ../sass/ID-I.scss */
+.edit_iBeacon_position #tabs #install img {
+  border: 1px solid #cccccc;
+  display: block;
+  margin: 0 auto;
+}
+/* line 154, ../sass/ID-I.scss */
+.edit_iBeacon_position #tabs #area_edit {
+  display: block;
+  padding: 10px 0 0 0;
+  border: solid 1px #cccccc !important;
+  border-width: 1px !important;
+  padding: 20px;
+  position: relative;
+  z-index: 1250;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+/* line 164, ../sass/ID-I.scss */
+.edit_iBeacon_position #tabs #area_edit img {
+  border: 1px solid #cccccc;
+  display: block;
+  margin: 0 auto;
+}
+/* line 171, ../sass/ID-I.scss */
+.edit_iBeacon_position .ui-tabs-nav {
+  background: none !important;
+  border: none !important;
+  margin-left: 20px !important;
+}
+/* line 175, ../sass/ID-I.scss */
+.edit_iBeacon_position .ui-tabs-nav li {
+  width: 140px;
+  border-radius: 0 !important;
+  color: #333333 !important;
+  font-weight: bold !important;
+  margin-right: 0 !important;
+  border: 1px solid #cccccc !important;
+  background: none !important;
+  position: relative !important;
+  top: 2px !important;
+  z-index: 1000;
+}
+/* line 186, ../sass/ID-I.scss */
+.edit_iBeacon_position .ui-tabs-nav li a {
+  padding: 5px 0 8px 0 !important;
+  float: inherit !important;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #eeeeee;
+}
+/* line 193, ../sass/ID-I.scss */
+.edit_iBeacon_position .ui-tabs-nav li a span {
+  display: inline-block;
+}
+/* line 198, ../sass/ID-I.scss */
+.edit_iBeacon_position .ui-tabs-nav .ui-state-active {
+  background: none !important;
+  background-color: white !important;
+  border-top: solid 3px #00a3af !important;
+  border-bottom: none !important;
+  z-index: 1500;
+}
+/* line 204, ../sass/ID-I.scss */
+.edit_iBeacon_position .ui-tabs-nav .ui-state-active a {
+  padding: 5px 0 !important;
+  background-color: white !important;
+}
+/* line 210, ../sass/ID-I.scss */
+.edit_iBeacon_position .regist_button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/********************************************
+/	I-9
+*********************************************/
+/* line 222, ../sass/ID-I.scss */
+.ibeacon_select {
+  margin-bottom: 0 !important;
+}
+/* line 224, ../sass/ID-I.scss */
+.ibeacon_select tr {
+  border: none;
+}
+/* line 226, ../sass/ID-I.scss */
+.ibeacon_select tr th {
+  border: 1px solid #dedede;
+}
+/* line 229, ../sass/ID-I.scss */
+.ibeacon_select tr td {
+  border: 1px solid #dedede;
+}
+/* line 231, ../sass/ID-I.scss */
+.ibeacon_select tr td span {
+  display: block;
+}
+/* line 233, ../sass/ID-I.scss */
+.ibeacon_select tr td span input[type="radio"] {
+  width: auto !important;
+}
+/* line 236, ../sass/ID-I.scss */
+.ibeacon_select tr td span:first-child {
+  text-align: center !important;
+}
+
+/********************************************
+/	I-10
+*********************************************/
+/* line 249, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img {
+  display: inline-block;
+  position: relative;
+}
+/* line 253, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .map {
+  position: inherit;
+}
+/* line 257, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .pointer {
+  position: absolute;
+  display: inline-block !important;
+}
+/* line 260, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .pointer img {
+  border: none !important;
+}
+/* line 265, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .weak_up {
+  height: 25px;
+  overflow: hidden;
+}
+/* line 268, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .weak_up img {
+  margin-top: -25px !important;
+}
+/* line 272, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .dot_img {
+  height: 19px;
+  overflow: hidden;
+}
+/* line 275, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .dot_img img {
+  margin-top: -19px !important;
+}
+/* line 279, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .triangle_img {
+  height: 20px;
+  overflow: hidden;
+}
+/* line 282, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .triangle_img img {
+  margin-top: -20px !important;
+}
+/* line 286, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .attendance_img {
+  height: 29px;
+  overflow: hidden;
+}
+/* line 289, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .attendance_img img {
+  margin-top: -29px !important;
+}
+/* line 293, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .popup_list {
+  position: absolute;
+  top: 120px;
+  left: 355px;
+  display: none;
+}
+/* line 298, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .popup_list li {
+  float: inherit;
+  margin: 0;
+  border: 1px solid #333333;
+  border-collapse: collapse;
+}
+/* line 303, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .popup_list li a {
+  text-align: left;
+  color: #333333;
+  background: #ececec;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+/* line 310, ../sass/ID-I.scss */
+.new_regist .ibeacon_position_img .popup_list li a:hover {
+  background-color: #00a3af;
+  color: #fff;
+  opacity: 1;
+}
+/* line 319, ../sass/ID-I.scss */
+.new_regist .area_edit_map {
+  display: inline-block;
+  margin-bottom: 30px;
+}

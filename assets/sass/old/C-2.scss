@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#result_table{
+	width:100%;
+	display: block;
+	table{
+		tr{
+			td.cor{
+				span{
+					display: inline-block;
+					width: 90px;
+				}
+				a{
+					text-decoration: none;
+					display: inline-block;
+					background-color: #afafaf;
+					color: 	#ffffff;
+					padding: 3px 12px;
+					cursor: pointer;
+					///jsで角丸にしています
+					&:hover{
+						background-color: #666666;
+					}
+				}
+			}
+			td.align_L{
+				text-align: left;
+			}
+		}
+		.saturday{
+			td{
+				background-color: #eff7fb;
+			}
+		}
+		.sunday{
+			td{
+				background-color: #fdefef;
+			}
+		}
+	}
+}

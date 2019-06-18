@@ -1,0 +1,11 @@
+/********************************************
+/	J-1
+*********************************************/
+/* line 11, ../sass/ID-J.scss */
+.proce_area table tr td input {
+  width: auto !important;
+}
+/* line 14, ../sass/ID-J.scss */
+.proce_area table tr td select {
+  width: auto !important;
+}

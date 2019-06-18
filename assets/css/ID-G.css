@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/********************************************
+/	G-2・G-3
+*********************************************/
+/* line 8, ../sass/ID-G.scss */
+.proce_area table {
+  margin-bottom: 0 !important;
+}
+
+/* line 16, ../sass/ID-G.scss */
+.pub_table_ov tr td input {
+  width: 60%;
+}
+/* line 19, ../sass/ID-G.scss */
+.pub_table_ov tr td select {
+  width: 60%;
+}

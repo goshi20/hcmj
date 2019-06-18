@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/********************************************
+*****オーバーレイの初期設定
+*********************************************/
+
+#cboxLoadedContent{
+	border:none!important;
+}
+
+#cboxContent{
+	background:#000!important;
+}
+
+#cboxClose{
+	display: none;
+}
+
+/********************************************
+*****オーバーレイの共通設定
+*********************************************/
+
+///表示エリア
+#ajax-wrap{
+	//width: 750px;
+	///オーバーレイ内タイトル
+	height: 100%;
+	.overlay_title{
+		background-color: #00a3af;
+		height: 49px;
+		width: 100%;
+		margin:0;
+		display: block;
+		color:#fff;
+		font-size: 18px;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+		span{
+			margin-top: 10px;
+			margin-left: 20px;
+			float: left;
+		}
+		a{
+			float: right;
+			margin-right: 5px;
+			margin-top: 5px;
+		}
+	}
+	///オーバーレイ内メインコンテンツ
+	#overlay_main_content{
+		padding: 0 20px;
+		.error_area{
+			border:solid 3px #e9546b;
+			margin-bottom: 20px;
+			background-color: #fff;
+			p{
+				color:#e9546b;
+				margin: 15px 20px;
+				font-weight: bold;
+				font-size: 16px;
+			}
+		}
+		///オフィス表示の共通設定
+		.office_map{
+			width: 100%;
+			margin-bottom: 40px;
+			.map{
+				position: relative;
+				width: 100%;
+			}
+		}
+		///オーバーレイ内テーブルの共通設定
+		.pub_table_ov{
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 30px;
+			color:#333333;
+			tr{
+				border-top: 1px solid #dedede;
+				border-bottom: 1px solid #dedede;
+				th{
+					background-color: #ececec;
+					padding:13.5px 12px;
+					text-align: left;
+					font-size: 16px;
+					font-weight: normal;
+				}
+				td{
+					padding:9.5px 12px;
+					text-align: left;
+					textarea{
+						width: 100%;
+						resize: none;
+					}
+					input[type="radio"]{
+						margin:0;
+						margin-left: 20px;
+						&:first-child{
+							margin-left: 0;
+						}
+					}
+					input[type="text"]{
+						height: 26px;
+						width: 60%;
+					}
+					input[type="number"]{
+						height: 26px;
+						width: 60%;
+					}
+					input[type="date"]{
+						height: 26px;
+						width: 60%;
+					}
+					input[type="time"]{
+						height: 26px;
+						width: 60%;
+					}
+					select{
+						height: 30px;
+						width: 60%;
+					}
+				}
+			}
+		}
+		///検索ボタンの共通設定
+		.search_ov{
+			text-align: center;
+			ul{
+				display: inline-block;
+				li{
+					float: left;
+					margin-left: 40px;
+					margin-bottom: 20px;
+					&:first-child{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.overflow_footer{
+		height: 20px;
+		display: block;
+	}
+}

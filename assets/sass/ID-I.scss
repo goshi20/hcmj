@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+/********************************************
+/	I-1
+*********************************************/
+
+#floor_table{
+	width:100%;
+	display: block;
+	table{
+		tr{
+			td{
+				text-align: left;
+			}
+		}
+		.over_area{
+			background-color: #ececec;
+			td{
+				color:#999999;
+			}
+		}
+	}
+}
+
+/********************************************
+/	I-2
+*********************************************/
+
+.floor_regist{
+	input{
+		border: 1px solid #a9a9a9
+	}
+	.floor_header1{
+		td{
+			padding-right: 10px;
+			input{
+				width: 100%;
+			}
+		}
+	}
+	.floor_header2{
+		td{
+			input{
+				width: 55%;
+				margin-right: 10px;
+			}
+		}
+	}
+	.floor_header3{
+		td{
+			input{
+				width: 30%;
+				margin-right: 10px;
+			}
+		}
+	}
+	.floor_header4{
+		td{
+			input{
+				width: 30%;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+/********************************************
+/	I-3
+*********************************************/
+
+.new_regist{
+	table{
+		caption{
+			text-align: left;
+			font-weight: bold;
+			color: #00a3af;
+			font-size: 16px;
+		}
+	}
+	ul{
+		li{
+			margin-left:40px;
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+/********************************************
+/	I-4
+/	※I-2と同じです
+*********************************************/
+
+/********************************************
+/	I-5
+/	※I-3と同じです
+*********************************************/
+
+/********************************************
+/	I-6
+*********************************************/
+.management_img{
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom:30px;
+	position: relative;
+	.map{
+		border: 1px solid #cccccc;
+	}
+	.marker{
+		position: absolute;
+		top: 15px;
+		left:0px;
+		z-index: 1;
+		border:1px solid #000;
+		border:none;
+	}
+}
+/********************************************
+/	I-8
+*********************************************/
+///tab設定
+#tabs{
+	border:none!important;
+	background: none!important;
+	padding:0!important;
+}
+
+
+.ui-tabs-nav{
+	padding:0!important;
+}
+
+.edit_iBeacon_position{
+	text-align: left!important;
+	#tabs{
+		#install{
+			display: block;
+			padding:10px 0 0 0;
+			border:solid 1px #cccccc!important;
+			border-width: 1px!important;
+			padding: 20px;
+			position: relative;
+			z-index: 1250;
+			background-color: #fff;
+			margin-bottom: 30px;
+			img{
+				border:1px solid #cccccc;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		#area_edit{
+			display: block;
+			padding:10px 0 0 0;
+			border:solid 1px #cccccc!important;
+			border-width: 1px!important;
+			padding: 20px;
+			position: relative;
+			z-index: 1250;
+			background-color: #fff;
+			margin-bottom: 30px;
+			img{
+				border:1px solid #cccccc;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+	.ui-tabs-nav{
+		background:none!important;
+		border:none!important;
+		margin-left: 20px!important;
+		li{
+			width: 140px;
+			border-radius: 0!important;
+			color:#333333!important;
+			font-weight: bold!important;
+			margin-right: 0!important;
+			border:1px solid #cccccc!important;
+			background:none!important;
+			position: relative!important;
+			top:2px!important;
+			z-index: 1000;
+			a{
+				padding:5px 0 8px 0!important;
+				float: inherit!important;
+				display: block;
+				width: 100%;
+				text-align: center;
+				background-color: #eeeeee;
+				span{
+					display: inline-block;
+				}
+			}
+		}
+		.ui-state-active{
+			background: none!important;
+			background-color:#ffffff!important;
+			border-top: solid 3px #00a3af!important;
+			border-bottom: none!important;
+			z-index: 1500;
+			a{
+				padding: 5px 0!important;
+				background-color:#ffffff!important;
+			}
+		}
+	}
+	.regist_button{
+		display: block;
+		margin: 0 auto;
+		margin-top:30px;
+		text-align: center;
+	}
+}
+
+/********************************************
+/	I-9
+*********************************************/
+
+.ibeacon_select{
+	margin-bottom:0!important;
+	tr{
+		border:none;
+		th{
+			border:1px solid #dedede;
+		}
+		td{
+			border:1px solid #dedede;
+			span{
+				display: block;
+				input[type="radio"]{
+					width: auto!important;
+				}
+				&:first-child{
+					text-align: center!important;
+				}
+			}
+		}
+	}
+}
+
+/********************************************
+/	I-10
+*********************************************/
+
+.new_regist{
+	.ibeacon_position_img{
+		display: inline-block;
+		position: relative;
+		//背景画像
+		.map{
+			position: inherit;
+		}
+		//各ポインタの共通設定
+		.pointer{
+			position: absolute;
+			display: inline-block!important;
+			img{
+				border:none!important;
+			}
+		}
+		//個別ポインタの設定
+		.weak_up{
+			height: 25px;
+			overflow: hidden;
+			img{
+				margin-top: -25px!important;
+			}
+		}
+		.dot_img{
+			height: 19px;
+			overflow: hidden;
+			img{
+				margin-top: -19px!important;
+			}
+		}
+		.triangle_img{
+			height: 20px;
+			overflow: hidden;
+			img{
+				margin-top: -20px!important;
+			}
+		}
+		.attendance_img{
+			height: 29px;
+			overflow: hidden;
+			img{
+				margin-top: -29px!important;
+			}
+		}
+		.popup_list{
+			position: absolute;
+			top: 120px;
+			left:355px;
+			display: none;
+			li{
+				float: inherit;
+				margin:0;
+				border: 1px solid #333333;
+				border-collapse: collapse;
+				a{
+					text-align: left;
+					color: #333333;
+					background: #ececec;
+					text-decoration: none;
+					display: block;
+					padding: 5px 10px;
+					&:hover{
+						background-color: #00a3af;
+						color: #fff;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	.area_edit_map{
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+}

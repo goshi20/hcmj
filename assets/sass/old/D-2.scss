@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.pub_table_ov{
+	tr{
+		td{
+			input[type="text"]{
+				width: 100%;
+			}
+			input[type="date"]{
+				width: 20%;
+				margin-top: 10px;
+				&:first-child{
+					width: 40%;
+					margin-top: 0;
+				}
+			}
+			input[type="time"]{
+				width: 20%;
+				margin-top: 10px;
+				&:first-child{
+					width: 40%;
+					margin-top: 0;
+				}
+			}
+			textarea{
+				height: 300px;
+			}
+			select{
+				float: right;
+			}
+			input[type="radio"]{
+				margin-top: 9px!important;
+			}
+		}
+	}
+}
+
+.search_ov{
+	ul{
+		li{
+			margin-left: 40px;
+			margin-bottom: 40px;
+		}
+	}
+}

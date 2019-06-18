@@ -1,0 +1,11 @@
+<div id="ajax-wrap" style="height:505px;">
+	<p class="overlay_title"><span>東京オフィス</span><a href="javascript:void(0)" onclick="$.colorbox.close()"><img src="assets/images/public/controls_close.png" height="37" width="37"></a></p>
+
+	<div id="overlay_main_content">
+		<div class="office_map">
+			<img src="./assets/images/map/zyyxfloormap01.png" class="map">
+			<img src="./assets/images/map/plot_info.png" height="66" width="77" class="plot_info">
+			<img src="assets/images/map/plot_point.png" height="36" width="30" class="plot_point">
+		</div>
+	</div>
+</div>

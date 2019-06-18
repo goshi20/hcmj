@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/********************************************
+/	B-1
+*********************************************/
+.proce_area{
+	table{
+		margin-bottom: 0!important;
+	}
+}
+
+#here_table{
+	width:100%;
+	display: block;
+	table{
+		th{
+		}
+		tr{
+			td{
+				text-align: left;
+			}
+		}
+		.over_area{
+			background-color: #ececec;
+			td{
+				color:#999999;
+			}
+		}
+	}
+}
+
+/********************************************
+/	B-2
+*********************************************/
+
+.office_map{
+	margin-bottom: 0!important;
+	.plot_info{
+		position: absolute;
+		top: 225px;
+		left:330px;
+	}
+	.plot_point{
+		position: absolute;
+		top: 290px;
+		left:355px;
+	}
+}

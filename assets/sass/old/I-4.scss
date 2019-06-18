@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.floor_regist{
+	input{
+		border: 1px solid #a9a9a9
+	}
+	.floor_header1{
+		td{
+			padding-right: 10px;
+			input{
+				width: 100%;
+			}
+		}
+	}
+	.floor_header2{
+		td{
+			input{
+				width: 55%;
+				margin-right: 10px;
+			}
+		}
+	}
+	.floor_header3{
+		td{
+			input{
+				width: 30%;
+			}
+		}
+	}
+	.floor_header4{
+		td{
+			input{
+				width: 30%;
+			}
+		}
+	}
+	.floor_header5{
+		td{
+			input{
+				width: 30%;
+			}
+		}
+	}
+}

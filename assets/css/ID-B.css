@@ -1,0 +1,45 @@
+/********************************************
+/	B-1
+*********************************************/
+/* line 7, ../sass/ID-B.scss */
+.proce_area table {
+  margin-bottom: 0 !important;
+}
+
+/* line 12, ../sass/ID-B.scss */
+#here_table {
+  width: 100%;
+  display: block;
+}
+/* line 19, ../sass/ID-B.scss */
+#here_table table tr td {
+  text-align: left;
+}
+/* line 23, ../sass/ID-B.scss */
+#here_table table .over_area {
+  background-color: #ececec;
+}
+/* line 25, ../sass/ID-B.scss */
+#here_table table .over_area td {
+  color: #999999;
+}
+
+/********************************************
+/	B-2
+*********************************************/
+/* line 36, ../sass/ID-B.scss */
+.office_map {
+  margin-bottom: 0 !important;
+}
+/* line 38, ../sass/ID-B.scss */
+.office_map .plot_info {
+  position: absolute;
+  top: 225px;
+  left: 330px;
+}
+/* line 43, ../sass/ID-B.scss */
+.office_map .plot_point {
+  position: absolute;
+  top: 290px;
+  left: 355px;
+}

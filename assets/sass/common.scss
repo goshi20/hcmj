@@ -1,0 +1,800 @@
+@charset "utf-8";
+html{
+	height:100%;
+}
+body{
+	height:100%;
+	margin: 0 auto;
+	padding:0;
+	font-size: 14px;
+	font-family: メイリオ, Meiryo, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, ＭＳ Ｐゴシック, Osaka, MS PGothic, sans-serif, Lucida Grande, Helvetic;
+	background-color: #fafafa;
+}
+
+
+//@media screen and (min-device-width: 1024px) {
+//	body{
+		//min-width: 1024px;
+	//}
+//}
+
+/*public*/
+a{
+	outline: none;
+	img{
+		border: none;
+	}
+	&:hover{
+		opacity: 0.8;
+		-ms-filter: "alpha(opacity=80)";
+		-khtml-opacity: 0.8;
+		-moz-opacity: 0.8;
+	}
+}
+
+ul{
+	padding:0;
+	margin:0;
+	li{
+		list-style-type: none;
+		list-style-position: inside;
+	}
+}
+
+input[type="checkbox"]{
+	border:none!important;
+}
+
+input[type="radio"]{
+	border:none!important;
+}
+
+select{
+	width:60%;
+	height: 30px;
+	border:1px solid #a9a9a9;
+}
+
+/********************************************
+/	各種ボタン類の設定
+/	ページ遷移・オーバーレイともに共通クラスを使用します
+*********************************************/
+///ページング及び表示一覧ダウンロード等のボタン設定
+.char_button{
+	border: 1px solid #cccccc;
+	background: url("../images/public/bottom_shadow.png");
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	background-color: #fff;
+}
+
+///検索ボタンの表示設定
+.char_button_search{
+	display: block;
+	margin:0;
+	margin-top: 30px;
+	margin-bottom: 35px;
+	a{
+		background: url("../images/public/bottom_shadow_search.png");
+		background-position: left bottom;
+		background-repeat: repeat-x;
+		background-color: #fddea5;
+		width: 180px;
+		height: 35px;
+		padding-top: 5px;
+		border:#cccccc 1px solid;
+		display: inline-block;
+		color: #333333;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 18px;
+		&:before {
+			content: "\e61b";
+			font-family: 'icomoon';
+			font-size: 16px;
+			font-weight: normal;
+			color: #333333;
+			font-size: 18px;
+			margin-right: 3px;
+			position: relative;
+			top: 2px;
+		}
+	}
+}
+
+///登録ボタンの表示設定
+.char_button_regist{
+	display: block;
+	margin:0;
+	a{
+		background: url("../images/public/bottom_shadow_search.png");
+		background-position: left bottom;
+		background-repeat: repeat-x;
+		background-color: #fddea5;
+		width: 180px;
+		height: 35px;
+		padding-top: 5px;
+		border:#cccccc 1px solid;
+		display: inline-block;
+		color: #333333;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 18px;
+	}
+}
+
+///確認ボタンの表示設定
+.char_button_confirm{
+	display: block;
+	margin:0;
+	a{
+		background: url("../images/public/bottom_shadow_search.png");
+		background-position: left bottom;
+		background-repeat: repeat-x;
+		background-color: #fddea5;
+		width: 180px;
+		height: 35px;
+		padding-top: 5px;
+		border:#cccccc 1px solid;
+		display: inline-block;
+		color: #333333;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 18px;
+	}
+}
+
+///フロア編集・一覧に戻るボタンの表示設定
+.char_button_floor{
+	display: block;
+	margin:0;
+	&:first-child{
+		a{
+			width: 200px;
+		}
+	}
+	a{
+		background: url("../images/public/bottom_shadow_search.png");
+		background-position: left bottom;
+		background-repeat: repeat-x;
+		background-color: #fddea5;
+		width: 250px;
+		height: 30px;
+		padding-top: 10px;
+		border:#cccccc 1px solid;
+		display: inline-block;
+		color: #333333;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 18px;
+		letter-spacing: 0.5px;
+		line-height: 17px;
+	}
+}
+
+///キャンセルボタンの表示設定
+.char_button_cancel{
+	display: block;
+	margin:0;
+	text-align: center;
+	float: left;
+	a{
+		background: url("../images/public/bottom_shadow.png");
+		background-position: left bottom;
+		background-repeat: repeat-x;
+		background-color: #fff;
+		width: 180px;
+		height: 35px;
+		padding-top: 5px;
+		border:#cccccc 1px solid;
+		display: inline-block;
+		color: #333333;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 18px;
+	}
+}
+
+///ibeacon選択の表示設定
+.char_button_beacon_select{
+	display: block;
+	margin:0;
+	margin-bottom: 35px;
+	text-align: center;
+	float: left;
+	a{
+		background: url("../images/public/bottom_shadow.png");
+		background-position: left bottom;
+		background-repeat: repeat-x;
+		background-color: #fff;
+		width: 180px;
+		height: 35px;
+		padding-top: 5px;
+		border:#cccccc 1px solid;
+		display: inline-block;
+		color: #333333;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 18px;
+	}
+}
+
+/*header*/
+@import 'header.scss';
+
+/*main_contents*/
+.wrapper{
+	min-height: 100%;
+	width: 100%;
+	min-width: 768px;
+	height: auto!important;
+	position: absolute;
+	top:0;
+	left:0;
+	.article{
+		display: block;
+		padding: 0 45px;
+		padding-bottom: 130px;
+		.error_area{
+			border:solid 3px #e9546b;
+			margin-bottom: 20px;
+			background-color: #fff;
+			p{
+				color:#e9546b;
+				margin: 15px 20px;
+				font-weight: bold;
+				font-size: 16px;
+			}
+		}
+	}
+}
+@media screen and (min-device-width: 1024px) {
+	.wrapper{
+		min-width: 1024px;
+	}
+}
+
+
+.section_navi{
+	display: block;
+	#page_title{
+		width:100%;
+		border-top:2px solid #d5d5d5;
+		p{
+			margin:0;
+			padding: 11px 20px;
+			border-top: #00a3af 2px solid;
+			display: inline-block;
+			margin-top: -2px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+	///日付によるページングの場合
+	#day_of_pageing{
+		ul{
+			li{
+				list-style-type: none;
+				float: left;
+				margin-left: 20px;
+				&:first-child{
+					margin-left: 0;
+					font-weight: bold;
+				}
+			}
+			li.list_select{
+				width: 28px;
+				height: 28px;
+				a{
+					display: inline-block;
+					color: #333333;
+					width:18px;
+					height: 25px;
+					padding-left: 10px;
+					padding-top: 3px;
+					font-weight: bold;
+					text-decoration: none;
+				}
+				&:hover{
+					opacity: 0.7;
+					-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+				}
+			}
+			li.this_month{
+				width: 46px;
+				height: 28px;
+				a{
+					width: 38px;
+					height: 25px;
+					padding-left: 8px;
+					padding-top: 3px;
+					text-decoration: none;
+					color: #333333;
+					display: inline-block;
+				}
+			}
+			li.select_day{
+				margin-top: 3px;
+				font-weight: bold;
+			}
+			li.download{
+				width: 202px;
+				height: 28px;
+				a{
+					text-decoration: none;
+					color: #333333;
+					display: inline-block;
+					width: 200px;
+					padding-left:0;
+					span{
+						display: block;
+						text-align: center;
+					}
+				}
+			}
+			li.right{
+				float: right;
+			}
+		}
+	}
+	///件数によるページングの場合
+	#count_of_pageing{
+		p{
+			margin:0;
+			float: left;
+			font-size:16px;
+			margin-top: 10px;
+			a{
+				width: 107px;
+				height: 32px;
+				padding-left: 33px;
+				padding-top:8px;
+				font-weight: bold;
+				color: #333333;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 18px;
+				margin-left: 10px;
+				margin-top: -10px;
+			}
+		}
+		ul{
+			float: right;
+			margin-top: 5px;
+			li{
+				float: left;
+				margin-left: 5px;
+				&:first-child{
+					margin-left: none;
+				}
+			}
+			.pageingL{
+				a{
+					display: inline-block;
+					width: 39px;
+					height: 25px;
+					padding-left: 10px;
+					padding-top: 5px;
+					color: #333333;
+					text-decoration: none;
+					font-weight: bold;
+				}
+			}
+			.pageingS{
+				a{
+					display: inline-block;
+					width:20px;
+					height: 25px;
+					padding-left: 10px;
+					padding-top: 5px;
+					color: #333333;
+					text-decoration: none;
+					font-weight: bold;
+				}
+			}
+			.active{
+				a{
+					background: url("../images/public/bottom_shadow_active.png");
+					background-position: left bottom;
+					background-repeat: repeat-x;
+					border:solid 1px #cccccc;
+					background-color: #009999;
+					color: #fefefe;
+				}
+			}
+		}
+	}
+	///検索及び登録
+	.proce_area{
+		width: 100%;
+		margin-top: 20px;
+		text-align: center;
+		table{
+			border-collapse: collapse;
+			width:100%;
+			margin-bottom: 30px;
+			th{
+				background-color: #ececec;
+				font-weight: normal;
+				text-align: left;
+				padding: 10px;
+				border-top: 1px solid #dedede;
+				border-bottom:1px solid #dedede;
+				font-size: 16px;
+			}
+			td{
+				text-align: left;
+				padding: 10px;
+				border-top: 1px solid #dedede;
+				border-bottom:1px solid #dedede;
+				input{
+					width:60%;
+					border:1px solid #a9a9a9;
+				}
+				input[type="text"]{
+					height: 26px;
+				}
+				input[type="number"]{
+					height: 26px;
+				}
+			}
+		}
+		ul{
+			display: inline-block;
+			margin:0;
+			li{
+				float: left;
+				margin-left: 40px;
+				&:first-child{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	///フロア名
+	.sub_title{
+		background-color: #83ccd2;
+		padding: 10px 5px;
+		color: #fff;
+	}
+	.setting_back{
+		display: block;
+		margin:0;
+		margin-top: 40px;
+		text-align: center;
+		float: left;
+		a{
+			background: url("../images/public/bottom_shadow_back.png");
+			background-position: left bottom;
+			background-repeat: repeat-x;
+			background-color: #cccccc;
+			width: 100px;
+			height: 25px;
+			padding-top: 3px;
+			border:#afafaf 1px solid;
+			display: inline-block;
+			color: #feffff;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 14px;
+			&:before {
+				content: "\e965";
+				font-family: 'icomoon';
+				font-size: 16px;
+				font-weight: normal;
+				color: #feffff;
+				font-size: 14px;
+				margin-right: 3px;
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
+}
+
+///新規登録エリア
+.new_regist{
+	text-align: center;
+	table{
+		tr{
+			th{
+				text-align: left;
+			}
+			td{
+				text-align: left;
+			}
+		}
+	}
+	ul{
+		display:inline-block;
+		li{
+			float: left;
+		}
+	}
+}
+
+///エリア管理
+.area_management{
+	text-align: center;
+	p{
+		margin:0;
+		margin-top: 15px;
+		padding: 15px 10px;
+		background-color: #ececec;
+		text-align: left;
+		text-align: left;
+	}
+	ul{
+		display: inline-block;
+		li{
+			float: left;
+			margin-left: 40px;
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.top15{
+	margin-top: 15px!important;
+}
+.bottom15{
+	margin-bottom: 15px!important;
+}
+
+.bottom20{
+	margin-bottom: 20px!important;
+}
+
+.bottom30{
+	margin-bottom: 30px!important;
+}
+
+///各テーブルの共通設定
+.pub_tset{
+	width:100%;
+	border-collapse: collapse;
+	border:1px solid #dedede;
+	tr{
+		background-color: #fff;
+		th{
+			background-color: #83ccd2;
+			padding: 6px 5px;
+			border:1px solid #dedede;
+			color: #ffffff;
+			.sort{
+				position: relative;
+				top: 5px;
+				margin-left: 5px;
+				.descending{
+					margin-left: 2px;
+				}
+			}
+		}
+		td{
+			padding: 7px 9px;
+			border:1px solid #dedede;
+			text-align: left;
+			input{
+				width:60%;
+				border:1px solid #a9a9a9;
+			}
+			input[type="text"]{
+				height: 26px;
+			}
+			input[type="number"]{
+				height: 26px;
+			}
+			a{
+				display: inline-block;
+			}
+			.table_button_C{
+				display: block;
+				text-align: center;
+				img{
+					display: inline-block;
+				}
+			}
+		}
+	}
+	///偶数行
+	.even{
+		background-color:#f8fbf8;
+	}
+}
+
+///各テーブルの共通設定
+.pub_tset_beside{
+	width:100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+	tr{
+		border-top:1px solid #dedede;
+		border-bottom:1px solid #dedede;
+		th{
+			background-color: #ececec;
+			padding: 13px 10px;
+			font-weight: normal;
+			font-size: 16px;
+			.sort{
+				position: relative;
+				top: 5px;
+				margin-left: 5px;
+				.descending{
+					margin-left: 2px;
+				}
+			}
+		}
+		.v_top{
+			vertical-align: top;
+		}
+		td{
+			padding: 14px 10px;
+			text-align: left;
+			input{
+				width:60%;
+				border:1px solid #a9a9a9;
+			}
+			input[type="text"]{
+				height: 26px;
+			}
+			input[type="number"]{
+				height: 26px;
+			}
+			a{
+				display: inline-block;
+			}
+			.table_button_C{
+				display: block;
+				text-align: center;
+				img{
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+
+@import 'footer.scss';
+
+@import 'overlay_setting.scss';
+
+/*icon_font*/
+/*=================================================================================
+	アイコンフォント
+/===============================================================================*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-qapj49');
+	src:url('../fonts/icomoon.eot?#iefix-qapj49') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?-qapj49') format('truetype'),
+	url('../fonts/icomoon.woff?-qapj49') format('woff'),
+	url('../fonts/icomoon.svg?-qapj49#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE600:before {
+	content: "\e600";
+}
+.icon-uniE601:before {
+	content: "\e601";
+}
+.icon-uniE602:before {
+	content: "\e602";
+}
+.icon-uniE603:before {
+	content: "\e603";
+}
+.icon-uniE604:before {
+	content: "\e604";
+}
+.icon-uniE605:before {
+	content: "\e605";
+}
+.icon-uniE606:before {
+	content: "\e606";
+}
+.icon-uniE607:before {
+	content: "\e607";
+}
+.icon-uniE608:before {
+	content: "\e608";
+}
+.icon-uniE609:before {
+	content: "\e609";
+}
+.icon-uniE60A:before {
+	content: "\e60a";
+}
+.icon-uniE60B:before {
+	content: "\e60b";
+}
+.icon-uniE60C:before {
+	content: "\e60c";
+}
+.icon-uniE60D:before {
+	content: "\e60d";
+}
+.icon-uniE60E:before {
+	content: "\e60e";
+}
+.icon-uniE60F:before {
+	content: "\e60f";
+}
+.icon-uniE610:before {
+	content: "\e610";
+}
+.icon-uniE611:before {
+	content: "\e611";
+}
+.icon-uniE612:before {
+	content: "\e612";
+}
+.icon-uniE613:before {
+	content: "\e613";
+}
+.icon-uniE614:before {
+	content: "\e614";
+}
+.icon-uniE615:before {
+	content: "\e615";
+}
+.icon-uniE616:before {
+	content: "\e616";
+}
+.icon-uniE617:before {
+	content: "\e617";
+}
+.icon-uniE618:before {
+	content: "\e618";
+}
+.icon-uniE619:before {
+	content: "\e619";
+}
+.icon-uniE61A:before {
+	content: "\e61a";
+}
+.icon-uniE61B:before {
+	content: "\e61b";
+}
+.icon-uniE61C:before {
+	content: "\e61c";
+}
+.icon-uniE705:before {
+	content: "\e705";
+}
+.icon-uniE706:before {
+	content: "\e706";
+}
+.icon-uniE905:before {
+	content: "\e905";
+}
+.icon-uniE960:before {
+	content: "\e960";
+}
+.icon-uniE961:before {
+	content: "\e961";
+}
+.icon-uniE9AC:before {
+	content: "\e9ac";
+}
+.icon-undo:before {
+	content: "\e965";
+}

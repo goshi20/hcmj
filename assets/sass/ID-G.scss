@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/********************************************
+/	G-2・G-3
+*********************************************/
+
+.proce_area{
+	table{
+		margin-bottom: 0!important;
+	}
+}
+
+.pub_table_ov{
+	tr{
+		td{
+			input{
+				width: 60%;
+			}
+			select{
+				width: 60%;
+			}
+		}
+	}
+}

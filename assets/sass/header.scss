@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+#header{
+	width:100%;
+	background-color: #fff;
+	#title_area{
+		height: 80px;
+		border-bottom: 4px solid #00a3af;
+		img{
+			float: left;
+			margin-left: 45px;
+			margin-top: 15px;
+		}
+		#login_info{
+			float: right;
+			margin-right: 45px;
+			margin-top: 35px;
+			p{
+				margin: 0;
+				font-size: 12px;
+				margin-top: -6px;
+			}
+			#logout_box{
+				padding:2px 5px;
+				background-color: #afafaf;
+				margin-left: 20px;
+				cursor: pointer;
+				a{
+					text-decoration: none;
+					color: #fff;
+				}
+				&:hover{
+					background-color: #666666;
+				}
+			}
+		}
+	}
+	#g_navi{
+		background-color: #ececec;
+		margin-bottom: 40px;
+		ul{
+			padding:0 45px;
+			margin: 0;
+			border-bottom: 1px solid #d1d1d1;
+			li{
+				float: left;
+				list-style-type: none;
+				border-right: 1px solid #d1d1d1;
+				&:first-child{
+					border-left: 1px solid #d1d1d1;
+				}
+				a{
+					font-size: 16px;
+					font-weight: bold;
+					text-decoration: none;
+					color: #333333;
+					padding: 10px 25px;
+					display: inline-block;
+					letter-spacing: 2px;
+				}
+				&:hover{
+					background-color: #00a3af;
+					a{
+						color:#fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+///グローバルナビのアクティブ設定
+.position_search{
+	#g_navi{
+		#position_search{
+			background-color: #00a3af;
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+
+.job_time_data{
+	#g_navi{
+		#job_time_data{
+			background-color: #00a3af;
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+
+.message_navi{
+	#g_navi{
+		#message_navi{
+			background-color: #00a3af;
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+
+.setting_navi{
+	#g_navi{
+		#setting_navi{
+			background-color: #00a3af;
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
