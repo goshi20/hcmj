@@ -20,7 +20,7 @@
 	<div class="wrapper">
 		<div id="header">
 			<div id="title_area">
-				<img src="assets/images/header/title_logo.png" height="55" width="424">
+				<img src="assets/images/public/logo.png">
 				<div id="login_info">
 					<p>管理者 株式会社ジークス smartdev@zyyx.jp<span id="logout_box"><a href="A-1.html">ログアウト</a></span></p>
 				</div>
@@ -44,24 +44,25 @@
 					<p>MR検索</p>
 				</div>
 
-				<div class="proce_area">
-					<table>
-						<tbody>
-							<tr>
-								<th width="15%">製薬会社名</th>
-								<td width="35%"><input type="text" name="" id=""></td>
-								<td width="20%">&nbsp;</td>
-								<td width="30%">&nbsp;</td>
-							</tr>
-							<tr>
-								<th width="15%">MR名</th>
-								<td width="35%"><input type="text" name="" id=""></td>
-								<th width="15%">取り扱い製品名</th>
-								<td width="35%"><input type="text" name="" id=""></td>
-							</tr>
-							<tr>
-								<th width="15%" rowspan="2">期間</th>
-								<td>
+				<div class="proce_area js-expand">
+					<p class="js-expand-button">検索する</p>
+					<div class="js-expand-body">
+						<ul class="forms">
+							<li>
+								<p>製薬会社名</p>
+								<div><input type="text" name="" id="" placeholder="ABC製薬株式会社"></div>
+							</li>
+							<li>
+								<p>MR名</p>
+								<div><input type="text" name="" id="" placeholder="山田太郎"></div>
+							</li>
+							<li>
+								<p>取り扱い製品名</p>
+								<div><input type="text" name="" id="" placeholder="エスタゾラ"></div>
+							</li>
+							<li>
+								<p>期間</p>
+								<div>
 									<input type="text" name="" id="" class="w_auto">
 									<select name="work_time_hour_f" id="work_time_hour_f" class="w_auto">
 										<option value="">00時</option>
@@ -151,16 +152,6 @@
 										<option value="">58分</option>
 										<option value="">59分</option>
 									</select>
-								</td>
-								<th rowspan="2" width="15%">ステータス</th>
-								<td rowspan="2">
-									<input class="w_auto" type="radio" name="status" value="" checked>全員
-									<input class="w_auto" type="radio" name="status" value="">院内にいる
-									<input class="w_auto" type="radio" name="status" value="">院内にいない
-								</td>
-							</tr>
-							<tr>
-								<td width="35%">
 									〜　
 									<input type="text" name="" id="" class="w_auto">
 									<select name="work_time_hour_f" id="work_time_hour_f" class="w_auto">
@@ -251,13 +242,21 @@
 										<option value="">58分</option>
 										<option value="">59分</option>
 									</select>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<ul>
-						<li class="char_button_search"><a href="javascript:void(0)">検索</a></li>
-					</ul>
+								</div>
+							</li>
+							<li>
+								<p>ステータス</p>
+								<div>
+									<label><input class="w_auto" type="radio" name="status" value="" checked><span>全員</span></label>
+									<label><input class="w_auto" type="radio" name="status" value=""><span>院内にいる</span></label>
+									<label><input class="w_auto" type="radio" name="status" value=""><span>院内にいない</span></label>
+								</div>
+							</li>	
+						</ul>
+						<ul>
+							<li class="char_button_search"><a href="javascript:void(0)">検索する</a></li>
+						</ul>			
+					</div>
 				</div>
 
 				<div id="count_of_pageing">
@@ -367,5 +366,15 @@
 			<div style=""clear:both;></div>
 		</div>
 	</div>
+	<script>
+		$(function(){
+			$('.js-expand').css('background-color', '#F5F8FB');
+			$('.js-expand-button').on('click', function(){
+				$('.js-expand').css('background-color', '#fff');
+				$(this).css('display', 'none');
+				$('.js-expand-body').slideDown();
+			})
+		})
+	</script>
 </body>
 </html>

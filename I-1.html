@@ -20,7 +20,7 @@
 	<div class="wrapper">
 		<div id="header">
 			<div id="title_area">
-				<img src="assets/images/header/title_logo.png" height="55" width="424">
+				<img src="assets/images/public/logo.png">
 				<div id="login_info">
 					<p>管理者 株式会社ジークス smartdev@zyyx.jp<span id="logout_box"><a href="A-1.html">ログアウト</a></span></p>
 				</div>
@@ -44,22 +44,21 @@
 					<p>滞在検索</p>
 				</div>
 
-				<div class="proce_area">
-					<table>
-						<tbody>
-							<tr>
-								<th width="15%">エリア</th>
-								<td width="35%">
-									<select name="group">
-										<option value="">--選択してください--</option>
+				<div class="proce_area js-expand">
+					<p class="js-expand-button">検索する</p>
+					<div class="js-expand-body">
+						<ul class="forms">
+							<li>
+								<p>エリア</p>
+								<div>
+									<select name="work_time_hour_f" id="work_time_hour_f" class="w_auto">
+										<option value="">選択してください</option>
 									</select>
-								</td>
-								<td width="20%">&nbsp;</td>
-								<td width="30%">&nbsp;</td>
-							</tr>
-							<tr>
-								<th width="15%" rowspan="2">期間</th>
-								<td colspan="3">
+								</div>
+							</li>
+							<li>
+								<p>期間</p>
+								<div>
 									<input type="text" name="" id="" class="w_auto">
 									<select name="work_time_hour_f" id="work_time_hour_f" class="w_auto">
 										<option value="">00時</option>
@@ -239,14 +238,14 @@
 										<option value="">58分</option>
 										<option value="">59分</option>
 									</select>
-									<input class="w_auto" type="checkbox" name="status" value="" checked>時間外活動で絞り込み
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<ul>
-						<li class="char_button_search"><a href="javascript:void(0)">検索</a></li>
-					</ul>
+								</div>
+		
+							</li>
+						</ul>		
+						<ul>
+							<li class="char_button_search"><a href="javascript:void(0)">検索</a></li>
+						</ul>
+					</div>
 				</div>
 
 				<div id="count_of_pageing">
@@ -338,5 +337,16 @@
 			<div style=""clear:both;></div>
 		</div>
 	</div>
+	<script>
+		$(function(){
+			$('.js-expand').css('background-color', '#F5F8FB');
+			$('.js-expand-button').on('click', function(){
+				$('.js-expand').css('background-color', '#fff');
+				$(this).css('display', 'none');
+				$('.js-expand-body').slideDown();
+			})
+		})
+	</script>
+	
 </body>
 </html>

@@ -4,10 +4,11 @@ html{
 }
 body{
 	height:100%;
+	background: #F4F4F4;
 	margin: 0 auto;
 	padding:0;
 	font-size: 14px;
-	font-family: メイリオ, Meiryo, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, ＭＳ Ｐゴシック, Osaka, MS PGothic, sans-serif, Lucida Grande, Helvetic;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 	background-color: #fafafa;
 }
 
@@ -51,8 +52,10 @@ input[type="radio"]{
 
 select{
 	width:60%;
-	height: 30px;
-	border:1px solid #a9a9a9;
+	max-width: 300px;
+	border: 1px solid #E6E6E6;
+	margin-right: 8px;
+	padding: 12px 8px;
 }
 
 /********************************************
@@ -61,43 +64,38 @@ select{
 *********************************************/
 ///ページング及び表示一覧ダウンロード等のボタン設定
 .char_button{
-	border: 1px solid #cccccc;
-	background: url("../images/public/bottom_shadow.png");
-	background-position: left bottom;
-	background-repeat: repeat-x;
+	// border: 1px solid #cccccc;
+	// background: url("../images/public/bottom_shadow.png");
+	// background-position: left bottom;
+	// background-repeat: repeat-x;
 	background-color: #fff;
 }
 
 ///検索ボタンの表示設定
 .char_button_search{
 	display: block;
-	margin:0;
-	margin-top: 30px;
-	margin-bottom: 35px;
+	margin:20px 0;
 	a{
-		background: url("../images/public/bottom_shadow_search.png");
 		background-position: left bottom;
 		background-repeat: repeat-x;
-		background-color: #fddea5;
-		width: 180px;
-		height: 35px;
-		padding-top: 5px;
-		border:#cccccc 1px solid;
-		display: inline-block;
-		color: #333333;
+		background-color: #0078D7;
+		width: 280px;
+		padding: 12px 0;
+		border-radius: 6px;
+		color: #fff;
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 18px;
+		display: block;
+	  
 		&:before {
 			content: "\e61b";
 			font-family: 'icomoon';
 			font-size: 16px;
 			font-weight: normal;
-			color: #333333;
+			color: #fff;
 			font-size: 18px;
-			margin-right: 3px;
-			position: relative;
-			top: 2px;
+			margin-right: 8px;
 		}
 	}
 }
@@ -259,15 +257,13 @@ select{
 	display: block;
 	#page_title{
 		width:100%;
-		border-top:2px solid #d5d5d5;
 		p{
-			margin:0;
-			padding: 11px 20px;
-			border-top: #00a3af 2px solid;
-			display: inline-block;
+			margin: 0;
+			display: block;
+			margin-bottom: 24px;
 			margin-top: -2px;
-			font-size: 18px;
-			font-weight: bold;
+			font-size: 24px;
+			font-weight: bold;		  
 		}
 	}
 	///日付によるページングの場合
@@ -363,7 +359,7 @@ select{
 			margin-top: 5px;
 			li{
 				float: left;
-				margin-left: 5px;
+				margin-left: 8px;
 				&:first-child{
 					margin-left: none;
 				}
@@ -371,34 +367,37 @@ select{
 			.pageingL{
 				a{
 					display: inline-block;
-					width: 39px;
-					height: 25px;
-					padding-left: 10px;
-					padding-top: 5px;
-					color: #333333;
+					width: auto;
+					padding:6px 12px;
+					color: #0078D7;
 					text-decoration: none;
 					font-weight: bold;
+					font-size: 14px;
+					border-radius: 3px;
+					box-shadow: 0 0 8px rgba(0,0,0,0.1);
+					border: 1px solid rgba(0,0,0,0.1);
+					transition: .3s;
 				}
 			}
 			.pageingS{
 				a{
 					display: inline-block;
-					width:20px;
-					height: 25px;
-					padding-left: 10px;
-					padding-top: 5px;
+					width: auto;
+					padding:6px 12px;
 					color: #333333;
 					text-decoration: none;
 					font-weight: bold;
+					font-size: 14px;
+					border-radius: 3px;
+					box-shadow: 0 0 8px rgba(0,0,0,0.1);
+					border: 1px solid rgba(0,0,0,0.1);
+					transition: .3s;
 				}
 			}
 			.active{
 				a{
-					background: url("../images/public/bottom_shadow_active.png");
-					background-position: left bottom;
-					background-repeat: repeat-x;
-					border:solid 1px #cccccc;
-					background-color: #009999;
+					background-color: #0078D7;
+					border-color:transparent;
 					color: #fefefe;
 				}
 			}
@@ -406,30 +405,110 @@ select{
 	}
 	///検索及び登録
 	.proce_area{
-		width: 100%;
+		margin:0 auto;
 		margin-top: 20px;
 		text-align: center;
+		padding: 16px;
+		border: 1px solid #eee;
+		background: #fff;
+		border-radius: 8px;
+		box-sizing: border-box;
+		margin-bottom: 32px;
+		ul.forms{
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto;
+			justify-content: center;
+			li{
+				display: flex;
+				justify-content: flex-start;
+				margin-left:0;
+				width: 100%;
+				margin-bottom: 12px;
+				p{
+					width: 200px;
+					text-align: left;
+					color: #555;
+					font-size: 14px;
+					font-weight: bold;
+					margin:12px 40px 12px 0;
+				}
+				div{
+					width: 100%;
+					display: flex;
+					align-items: center;
+					input[type=text]{
+						width: 100%;
+						max-width: 300px;
+						border: 1px solid #E6E6E6;
+						transition:.3s;
+						border-radius: 4px;
+						padding: 12px 8px;
+						margin-right: 8px;
+						font-size:14px;
+						&:focus{
+							outline:none;
+							border-color: #008CFF;
+							background-color: #F5F8FB;					  
+						}
+					}
+					input[type=radio]{
+						margin-right: 4px;
+						&:checked  + span{
+							font-weight: bold;
+							color: #0078D7;
+						}
+					}
+					label{
+						display: flex;
+						justify-content: flex-start;
+						margin-right: 32px;
+						white-space: nowrap;
+						font-size:14px;
+
+					}
+					select{
+						width: 100%;
+						max-width: 300px;
+						border: 1px solid #E6E6E6;
+						margin-right: 8px;
+						padding: 12px 8px;
+						height: 40px;
+						font-size:14px;
+						&:focus{
+							outline: none;
+							border-color: #008CFF;
+						}
+					}
+				}
+
+			}
+		}
 		table{
 			border-collapse: collapse;
 			width:100%;
 			margin-bottom: 30px;
 			th{
-				background-color: #ececec;
 				font-weight: normal;
 				text-align: left;
 				padding: 10px;
-				border-top: 1px solid #dedede;
-				border-bottom:1px solid #dedede;
-				font-size: 16px;
+				font-size: 14px;
 			}
 			td{
 				text-align: left;
-				padding: 10px;
-				border-top: 1px solid #dedede;
-				border-bottom:1px solid #dedede;
+				padding: 10px 32px 10px 10px;
+				font-size: 14px;
 				input{
-					width:60%;
-					border:1px solid #a9a9a9;
+					width: 60%;
+					border: 1px solid #E6E6E6;
+					transition:.3s;
+					border-radius: 4px;
+					padding: 4px 6px;
+					&:focus{
+						outline:none;
+						border-color: #008CFF;
+						background-color: #F5F8FB;					  
+					}
 				}
 				input[type="text"]{
 					height: 26px;
@@ -464,27 +543,25 @@ select{
 		text-align: center;
 		float: left;
 		a{
-			background: url("../images/public/bottom_shadow_back.png");
 			background-position: left bottom;
 			background-repeat: repeat-x;
 			background-color: #cccccc;
-			width: 100px;
-			height: 25px;
-			padding-top: 3px;
-			border:#afafaf 1px solid;
+			min-width: 100px;
+			padding: 12px 20px;
 			display: inline-block;
-			color: #feffff;
+			border-radius: 40px;
+			color: #111;
 			text-decoration: none;
 			font-weight: bold;
 			font-size: 14px;
 			&:before {
 				content: "\e965";
 				font-family: 'icomoon';
-				font-size: 16px;
+				font-size: 12px;
 				font-weight: normal;
-				color: #feffff;
+				color: #111;
 				font-size: 14px;
-				margin-right: 3px;
+				margin-right: 8px;
 				position: relative;
 				top: 2px;
 			}
@@ -554,28 +631,41 @@ select{
 ///各テーブルの共通設定
 .pub_tset{
 	width:100%;
+	margin: 40px 0;
 	border-collapse: collapse;
-	border:1px solid #dedede;
 	tr{
 		background-color: #fff;
 		th{
-			background-color: #83ccd2;
-			padding: 6px 5px;
-			border:1px solid #dedede;
-			color: #ffffff;
+			background-color: #1A283D;
+			padding: 12px 5px;
+			color: #fff;
+			border-bottom: 1px solid #555;
+			font-size: 16px;
+			letter-spacing: 0.1em;
 			.sort{
+				top: 1px;
+				margin-left: 12px;			  
 				position: relative;
-				top: 5px;
-				margin-left: 5px;
 				.descending{
-					margin-left: 2px;
+					margin-left: 4px;
+					img{
+						width: 14px;
+						height: auto;
+					}
+				}
+				.ascending{
+					img{
+						width: 14px;
+						height: auto;
+					}
 				}
 			}
 		}
 		td{
-			padding: 7px 9px;
-			border:1px solid #dedede;
-			text-align: left;
+			padding: 16px 6px;
+			border-top: 1px solid #dedede;
+			border-bottom: 1px solid #dedede;
+			text-align: center !important;
 			input{
 				width:60%;
 				border:1px solid #a9a9a9;
@@ -600,7 +690,7 @@ select{
 	}
 	///偶数行
 	.even{
-		background-color:#f8fbf8;
+		background-color: #F5F8FB;
 	}
 }
 
@@ -797,4 +887,28 @@ select{
 }
 .icon-undo:before {
 	content: "\e965";
+}
+.js-expand{
+	&-body{
+		display: none;
+	}
+	&-button{
+		font-size:18px;
+		font-weight: bold;
+		color: #008CFF;
+		&:before{
+			content: "\e611";
+			font-family: 'icomoon';
+			font-size: 12px;
+			font-weight: normal;
+			color: #008CFF;
+			font-size: 20px;
+			margin-right: 8px;
+			position: relative;
+			top: 2px;		
+		}
+	}
+}
+svg .bar{
+	fill: #0078D7 !important;
 }
